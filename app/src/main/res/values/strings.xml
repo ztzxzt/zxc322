@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JavaApp</string>
+    <string name="start_text1">Привет, ты хочешь запустить свой бизнес?</string>
+    <string name="text_button1">Да, хочу!</string>
+    <string name="text_button2">Нет, я хочу посмотреть товары</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="haveacc">У меня есть аккаунт</string>
+</resources>
