@@ -5,37 +5,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstActivity"
-    style="@s"
-    >
+    tools:context=".FirstActivity">
 
-
-    <ImageView
-        android:id="@+id/startImageView"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-
-    <TextView
-        android:id="@+id/startTextView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_extra_bold"
-        android:text="@string/start_text1"
-        android:textAllCaps="false"
-        android:textColor="@color/main"
-        android:textSize="28sp"
-        android:padding="25dp"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/buttonFalse"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startImageView" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConfirm"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/startImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/first" />
+
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:padding="25dp"
+            android:text="@string/start_text1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFalse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startImageView" />
+    </LinearLayout>
     <Button
         android:id="@+id/buttonConfirm"
         android:layout_width="311dp"
