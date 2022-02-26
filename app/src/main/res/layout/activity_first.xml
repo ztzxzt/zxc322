@@ -11,8 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/buttonConfirm"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <ImageView
             android:id="@+id/startImageView"
@@ -22,7 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/first" />
+            android:src="@drawable/first"/>
 
         <TextView
             android:id="@+id/startTextView"
@@ -40,12 +41,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/startImageView" />
     </LinearLayout>
+
     <Button
         android:id="@+id/buttonConfirm"
         android:layout_width="311dp"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
         android:background="@drawable/bg_first_button"
         android:onClick="Confirm"
         android:text="@string/text_button1"

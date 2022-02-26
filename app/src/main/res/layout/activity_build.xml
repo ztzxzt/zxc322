@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="40dp"
+    tools:context=".build">
+    <ImageView
+        android:id="@+id/png"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/png"
+        android:src="@drawable/example"
+        android:scaleType="centerCrop"
+        >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/room"
+            android:textColor="@color/title"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/price_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/room"
+            android:layout_alignStart="@id/room"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round"
+            android:contentDescription="@string/png" />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/room"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/price_img"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="@string/example_price"
+            android:textColor="@color/desc"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/price_img"
+            android:layout_alignStart="@id/room"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/round"
+            android:contentDescription="@string/png" />
+
+
+        <LinearLayout
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_below="@id/price"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/address"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/example_address"
+                android:textColor="@color/desc"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/example_address2"
+                android:textColor="@color/desc"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/address_text"
+            android:layout_alignStart="@id/room"
+            android:layout_alignEnd="@id/room"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/border"
+            android:layout_alignStart="@id/room"
+            android:layout_alignEnd="@id/room"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/example_text"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

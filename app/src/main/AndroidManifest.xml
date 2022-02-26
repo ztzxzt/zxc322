@@ -10,17 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaApp">
         <activity
+            android:name=".build"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".supplier_search"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".building_search"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".coffee_house_activity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity_business_area"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RegistrationActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FirstActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +45,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

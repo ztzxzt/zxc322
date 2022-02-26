@@ -142,6 +142,7 @@
                 android:orientation="horizontal"
                 android:minHeight="55dp"
                 android:background="@color/main">
+
                 <TextView
                     style="@style/textCardView"
                     android:layout_width="match_parent"
